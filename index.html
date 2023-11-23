@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UV-Compatibe" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="e-com.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <title>My Shop</title>
+</head>
+<body>
+
+   
+
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <img src="images/yvki0poc.png" alt="logo">
+        </div>
+       <div class="navlist">
+        <ul>
+            <li><a class="active" href="#men">Men</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#kids">Kids</a></li>
+            <li><a href="#home-living">Home & Living</a></li>
+            <li><a href="#beauty">Beauty</a></li>
+        </ul>
+       </div>
+
+       <div class="searchbar">
+        <input type="text" placeholder="search">
+        <i class='bx bx-search'></i>
+       </div>
+
+       <div class="icon" onclick="openCart()">
+        <i class='bx bx-cart'></i>
+    </div>
+    
+    <div class="icon" onclick="openUserPopup()">
+        <i class='bx bxs-user'></i>
+    </div>
+    
+    
+    <!-- User Popup -->
+    <div id="userPopup" class="popup">
+        <h2>User Account</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="button" onclick="login()">Sign In</button>
+        </form>
+        <button onclick="closeUserPopup()">Close</button>
+    </div>
+    
+
+     <div id="bar"class='bx bx-menu'></div>
+    </header>
+
+
+    <section id="main" class="main">
+        <div class="text-content">
+        <h4>Sales in Live</h4>
+        <h2>Amazing deals on</h2>
+        <h1> Beauty & Clothes</h1>
+        <p>Get upto 70% off!</p>
+        <button id="exploreButton">Explore Now!</button>
+     </div>
+   </section>
+
+  
+
+   <!-- men section -->
+   <section id="men" class="men">
+    <div class="trend">
+        <h2>Men's Wear</h2>
+    </div>
+
+    <div class="mens-trend">
+        <div class="card">
+            <img src="images/men1.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+    
+
+        <div class="card">
+            <img src="images/men2.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men3.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men4.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men5.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men6.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men7.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men8.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men9.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men10.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men11.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/men12.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+    </div>
+   </section>
+<!-- women wear  -->
+<section id="women" class="women">
+    <div class="trend">
+        <h2>Women Wear</h2>
+    </div>
+    <div class="womens-trend">
+        <div class="card">
+            <img src="images/girl1.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 20% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl2.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 30% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl3.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl4.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 10% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl5.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl6.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 10% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl7.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl8.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 15% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl9.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 20% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl10.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 5% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl11.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 12% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/girl12.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 13% discount</p>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Kids section -->
+
+<section id="kids" class="kids">
+    <div class="trend">
+        <h2>Kid's Wear</h2>
+    </div>
+    <div class="kids-trend">
+        <div class="card">
+            <img src="images/kids1.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 20% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids2.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 30% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids3.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids4.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 10% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids5.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids6.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 10% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids7.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 40% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids8.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 15% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids9.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 20% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids10.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 5% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids11.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 12% discount</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="images/kids12.png.jpg" alt="">
+            <p>Trends Clothes</p>
+            <p class="pass">Get upto 13% discount</p>
+            
+        </div>
+    </div>
+</section>
+    <!-- home and living -->
+    <section id="home-living" class="home-living">
+        <div class="trend">
+            <h2>Home and Living Style</h2>
+        </div>
+        <div class="home-trend">
+            <div class="card">
+                <img src="images/home1.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 20% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home2.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 30% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home3.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home4.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 10% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home5.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home6.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 10% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home7.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home8.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 15% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home9.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 20% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home10.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 5% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home11.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 12% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/home12.png.jpg" alt="">
+                <p>Trends Appliances</p>
+                <p class="pass">Get upto 13% discount</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty section -->
+
+    <section id="beauty" class="beautys">
+        <div class="trend">
+            <h2>Beauty care</h2>
+        </div>
+        <div class="Beauty-trend">
+            <div class="card">
+                <img src="images/img1.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 20% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img2.png.png" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 30% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img3.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img4.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 10% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img5.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img6.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 10% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img7.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 40% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img8.png.png" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 15% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img9.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 20% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img10.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 5% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img11.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 12% discount</p>
+                
+            </div>
+    
+            <div class="card">
+                <img src="images/img12.png.jpg" alt="">
+                <p>Beauty Care</p>
+                <p class="pass">Get upto 13% discount</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- trends section -->
+   <section id="slide" class="slide">
+    <div class="trend">
+        <h2>Limited Stock</h2>
+    </div>
+    <div class="slides">
+        <div class="slidecard">
+            <img src="images/girl10.png.jpg" alt="">
+            <img src="images/men10.png.jpg" alt="">
+            <img src="images/girl1.png.jpg" alt="">
+            <img src="images/men3.png.jpg" alt="">
+        </div>
+
+        <div class="slidecard">
+            <img src="images/girl9.png.jpg" alt="">
+            <img src="images/men6.png.jpg" alt="">
+            <img src="images/girl7.png.jpg" alt="">
+            <img src="images/men1.png.jpg" alt="">
+        </div>
+
+        <div class="slidecard">
+            <img src="images/img1.png.jpg" alt="">
+            <img src="images/men4.png.jpg" alt="">
+            <img src="images/img10.png.jpg" alt="">
+            <img src="images/men4.png.jpg" alt="">
+        </div>
+
+        <div class="slidecard">
+            <img src="images/kids10.png.jpg" alt="">
+            <img src="images/men10.png.jpg" alt="">
+            <img src="images/kids1.png.jpg" alt="">
+            <img src="images/img4.png.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+    <!-- footer section -->
+   <section id="footer" class="footer">
+    <div class="trend">
+        <h2>Read & Know</h2>
+    </div>
+    <div class="information">
+        
+        <div class="col-right">
+            <h3><a href="e-com.html">online shopping</a></h3>
+            <ul>
+                <li>
+                    <a href="e-com.html">Men</a>
+                    <a href="e-com.html">Women</a>
+                    <a href="e-com.html">kid's</a>
+                    <a href="e-com.html">Home & Living</a>
+                    <a href="e-com.html">Beauty</a>
+                
+                </li>
+            </ul>
+        </div>
+        <div class="col-left">
+            <h3><a href="e-com.html">Customer Polices</a></h3>
+            <ul>
+                <li>
+                    <a href="e-com.html">Contact Us</a>
+                    <a href="e-com.html">FAQ</a>
+                    <a href="e-com.html">T&C</a>
+                    <a href="e-com.html">Return</a>
+                    <a href="e-com.html">Shipping</a>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+   </section>
+
+
+    <script src="e-com.js"></script>
+</body>
+</html>
